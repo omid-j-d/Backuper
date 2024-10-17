@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 colors=( "\033[1;31m" "\033[1;35m" "\033[1;92m" "\033[38;5;46m" "\033[1;38;5;208m" "\033[1;36m" "\033[0m" )
@@ -19,7 +20,7 @@ check_needs() {
         PKG_MANAGER="apt-get"
         PKG_UPDATE="$PKG_MANAGER update -y"
         PKG_INSTALL="$PKG_MANAGER install -y"
-        MYSQL_CLIENT_PKG="mysql-client"
+        MYSQL_CLIENT_PKG="default-mysql-client"
     elif command -v dnf &> /dev/null; then
         PKG_MANAGER="dnf"
         PKG_UPDATE="$PKG_MANAGER check-update"
